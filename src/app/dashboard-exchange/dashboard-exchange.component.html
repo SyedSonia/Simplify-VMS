@@ -1,0 +1,291 @@
+<div class="exchange-screen pt-3 d-flex">
+
+    <div class="sidebar">
+        <div class="py-1 logo bg-white row m-0 align-items-center">
+            <img src="./assets/logo.png" alt="logo">
+            <h5>LOGO</h5>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-ellipsis-h pl-5 ml-4"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" translate>Home</a>
+                    <a class="dropdown-item" href="#" translate>Exchange</a>
+                    <a class="dropdown-item" href="#" translate>Withdraw</a>
+                    <a class="dropdown-item" href="#" translate>Deposit</a>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 mt-3 pb-3 add-new">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <a href="#">New</a>
+        </div>
+        <nav class="navbar navbar-expand-lg mt-2 p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <span>Home</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <i class="fa fa-bars text-body" aria-hidden="true"></i>
+                                <span>Exchange</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <i class="fa fa-folder-o" aria-hidden="true"></i>
+                                <span>Withdraw</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            <span>Deposit</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <i class="fa fa-recycle" aria-hidden="true"></i>
+                                <span>Trading</span>
+                            </div>
+                        </a>
+                    </li>
+                    <div class="bg-white add-mobile mb-3">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <span class="d-block">Add your<br> mobile phone</span>
+                        <small>e.g +48 013 403 153</small>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <strong>SEND</strong>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                <span>Settings</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!---side bar ends-->
+
+    <div>
+<!---exchange screen--->
+        <div class="col-md-8 col-lg-7 col-12 mt-1 exchange bg-white p-0 pb-3">
+            <div class="bg-white p-2 exchange-details">
+                <div class="row m-0 align-items-center justify-content-between px-3">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <h5 class="mb-0">EXCHANGE</h5>
+                    <div>
+                        <i class="fa fa-clock-o pr-3" aria-hidden="true"></i>
+                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row m-0 pt-4">
+                    <div class="col-md-6 p-0">
+                        <div class="pl-5">
+                            <div class="reset-values pb-3 row m-0 align-items-center">
+                                <select>
+                                    <option>EUR</option>
+                                    <option>INR</option>
+                                    <option>USD</option>
+                                </select>
+                                <span>RESET VALUES</span>
+                                <div class="dropdown pl-5 ml-5">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" translate>Home</a>
+                                        <a class="dropdown-item" href="#" translate>Exchange</a>
+                                        <a class="dropdown-item" href="#" translate>Withdraw</a>
+                                        <a class="dropdown-item" href="#" translate>Deposit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4 usd-converting">
+                                <h4><i class="fa fa-eur" aria-hidden="true"></i> 1 700.00</h4>
+                                <span>1 USD = 0.876647 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 p-0 price-dollars">
+                        <div class="dollar-range d-flex justify-content-between">
+                            <select>
+                                <option>USD</option>
+                                <option>INR</option>
+                                <option>EUR</option>
+                            </select>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" translate>Home</a>
+                                    <a class="dropdown-item" href="#" translate>Exchange</a>
+                                    <a class="dropdown-item" href="#" translate>Withdraw</a>
+                                    <a class="dropdown-item" href="#" translate>Deposit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-4 text-center">
+                            <div class="d-flex justify-content-center">
+                                <i class="fa fa-usd" aria-hidden="true"></i>
+                                <h4>1 927.28</h4>
+                            </div>
+                            <span>1 EUR = 1.14071 USD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <img src="./assets/graph.png" alt="image">
+            </div>
+            <div class="row m-0 px-4">
+                <div class="col-md-3 p-0 col-12">
+                    <div class="row m-0 exchanges p-3">
+                        <h3>18</h3>
+                        <strong>Exchanges</strong>
+                    </div>
+                    <div class="row m-0 withdraws p-3 mt-3">
+                        <h3>26</h3>
+                        <strong>Withdraws</strong>
+                    </div>
+                </div>
+                <div class="col-md-9 col-12">
+                    <div class="row m-0 exchange-date">
+                        <div class="col-md-4 col-4 p-0">
+                            <span>EUR TO USD</span>
+                        </div>
+                        <div class="col-md-3 col-3 p-0">
+                            <span>LAST 30 DAYS</span>
+                        </div>
+                        <div class="col-md-3 col-3 p-0">
+                            <span>LAST 90 DAYS</span>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 high-range">
+                        <div class="col-md-4 col-4 p-0">
+                            <span>High</span>
+                        </div>
+                        <div class="col-md-3 col-3 p-0">
+                            <span>1.15536</span>
+                        </div>
+                        <div class="col-md-4 col-4 p-0">
+                            <span>1.15536</span>
+                        </div>
+                        <div class="col-md-1 col-1 p-0">
+                            <i class="fa fa-eye pr-2" aria-hidden="true"></i>
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 low-range">
+                        <div class="col-md-4 col-4 p-0">
+                            <strong>Low</strong>
+                        </div>
+                        <div class="col-md-3 col-3 p-0">
+                            <span>1.13124</span>
+                        </div>
+                        <div class="col-md-4 col-4 p-0">
+                            <span>1.12242</span>
+                        </div>
+                        <div class="col-md-1 col-1 p-0">
+                            <i class="fa fa-eye pr-2" aria-hidden="true"></i>
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 average-range">
+                        <div class="col-md-4 col-4 p-0">
+                            <strong>Average</strong>
+                        </div>
+                        <div class="col-md-3 col-3 p-0">
+                            <span>1.14192</span>
+                        </div>
+                        <div class="col-md-4 col-4 p-0">
+                            <span>1.13839</span>
+                        </div>
+                        <div class="col-md-1 col-1 p-0">
+                            <i class="fa fa-eye pr-2" aria-hidden="true"></i>
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!---Profile screen--->
+        <div class="col-sm-12 d-block px-3 mt-1 profile">
+            <div class="bg-white row m-0 profile-details justify-content-between">
+                <h5>Profile</h5>
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </div>
+            <div class="mt-5 text-center user pb-3">
+                <img src="./assets/user.jpg" alt="img">
+                <div class="mt-2 text-center">
+                    <h4>Todd Anderson</h4>
+                    <strong>todd.anderson@hotmail.com</strong>
+                </div>
+            </div>
+            <div class="px-3 mt-4 row m-0 justify-content-between volume">
+                <span>TODAY'S VOLUME</span>
+                <div class="dropdown dropleft">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" translate>Home</a>
+                        <a class="dropdown-item" href="#" translate>Exchange</a>
+                        <a class="dropdown-item" href="#" translate>Withdraw</a>
+                        <a class="dropdown-item" href="#" translate>Deposit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 px-3 volume-range">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <strong><i class="fa fa-usd pr-1" aria-hidden="true"></i>1840.0 (10,64%)</strong>
+            </div>
+            <div class="mt-4 p-3 bg-white unlock-features">
+                <i class="fa fa-unlock-alt pr-2" aria-hidden="true"></i>
+                <span>Add phone number to unlock feature</span>
+            </div>
+            <div class="mt-4 credit-card">
+                <img src="./assets/creditcard.jpg" alt="image">
+            </div>
+            <div class="actions row m-0 mt-4 justify-content-between">
+                <h6>ACTIONS</h6>
+                <div>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+h5{
+	font-size:12px;
+	margin-bottom:0px;
+	font-weight:600;
+}
+select{
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	padding: 3px;
+}
+.fa{
+	color: #9fa1ae;
+}
+.fa-plus,.user img,.actions .fa{
+	border-radius:50%;
+}
+select,.price-dollars span,.usd-converting span,.fa-plus{
+	font-size: 11px !important;
+}
+.add-new,.exchange-details,.reset-values,.high-range,.low-range,.average-range{
+	border-bottom:1px solid #e8e9f2;
+}
+.logo,.exchanges,.withdraws,.unlock-features,.credit-card img{
+	border-radius:8px;
+}
+.dropdown{
+	.dropdown-toggle::after,.dropleft .dropdown-toggle::before{
+		display: none;
+	}
+	button {
+		background: transparent;
+		outline: none;
+		border: none;
+		color: black;
+		box-shadow: none !important;
+	}
+}
+.dropleft .dropdown-toggle::before {
+	display: none;
+}
+.price-dollars,.usd-converting{
+	h4{
+		color:#36405a;
+		font-weight:normal;
+		margin-bottom: 0px;
+	}
+	span{
+		color: #7f879b;
+	}
+}
+	
+
+
+.exchange-screen{
+    background-color: #f5f7fb;
+	font-family: Roboto;
+	font-size:13px;
+}
+/*side bar starts*/
+
+.sidebar{
+	position: fixed;
+    width: 183px;
+    overflow: visible;
+    bottom: 0;
+    left: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+    top: 19px;
+	.nav-link{
+		color:#a6adc6;
+		display: inline-flex;
+    	text-decoration: none;
+    	width: 100%;
+		padding-bottom:18px;
+		.fa{
+			font-size:16px;
+			padding-right:20px;
+		}
+	}
+	.active .nav-link{
+		color:black !important;
+	}
+	li {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+	.logo{
+		img{
+			width:17%;
+		}
+		h5{
+			padding-left:10px;
+		}
+	}
+	.add-new{
+		a{
+			text-decoration: none;
+			padding-top:3px;
+			&:hover{
+				color:#3860ff;
+			}
+		}
+		.fa-plus{
+			color: #3860ff;
+			background-color: white;
+			padding: 9px;
+			margin-right: 13px;
+		}
+	}
+	.add-mobile{
+		padding: 14px 32px;
+		span{
+			color: #3860ff;
+			line-height: 18px;
+			margin-top: 30px;
+		}
+		small{
+			color:#9fa1ae;
+		}
+		strong,.adding{
+			color:#9aa0b3;
+			font-size: 12px;
+		}
+		.fa-arrow-right{
+			opacity:0.3;
+		}
+		.fa-plus{
+			background-color: #f4f6fa;
+			color: #8b91a6 !important;
+			float: right;
+			padding: 7px;
+		}
+	}
+}
+/*sidebar ends*/
+
+/*exchange screen*/
+.exchange{
+	margin-left: 222px;
+	border-top-right-radius:8px !important;
+	border-top-left-radius:8px !important;
+	.exchange-details{
+		border-top-right-radius: 8px;
+    	border-top-left-radius: 8px;
+	}
+	.reset-values{
+		select{
+			background-color: #e7edff;
+			color: #3860ff;
+		}
+		span{
+			color: #a0a7b3;
+			padding-left: 13px;
+		}
+	}
+	.price-dollars{
+		background-color: #e8edf6;
+		border-radius: 8px;
+		select{
+			background-color: #f9fbfc;
+			color: #677287;
+		}
+		.dollar-range{
+			border-bottom: 1px solid #dadfe8;
+			padding: 8px 20px;
+		}
+		.fa-usd{
+			font-size: 15px;
+    		padding: 6px;
+		}
+	}
+	.chart img{
+		width:100%;
+		height:350px;
+	}
+	.exchanges{
+		background-color:#e8efff;
+		h3{
+			color:#5750eb;
+			margin-bottom: 0px;
+		}
+		strong{
+			color: #727ab9;
+			padding: 5px 15px;
+		}
+	}
+	.withdraws{
+		background-color:#f8f1ff;
+		h3{
+			color:#9c42fb;
+			margin-bottom: 0px;
+		}
+		strong{
+			color: #977bbb;
+			padding: 5px 15px;
+		}
+	}
+	.exchange-date{
+		span{
+			color:#9aa1b1;
+			font-weight:400;
+		}
+	}
+	.high-range {
+		padding-bottom: 15px;
+		span{
+			color:#5750eb;
+		}
+	}
+	.low-range,.average-range{
+		padding-bottom: 15px;
+		span{
+			color: #677287;
+		}
+	}
+}
+
+/*profile styles*/
+.profile{
+	width:310px;
+	position: absolute;
+    top: 15px;
+    right: 0px;
+	.profile-details{
+		border-radius: 8px;
+    	padding: 12px;
+	}
+	.user {
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		img{
+			width: 60%;
+			padding: 14px;
+			border-bottom: 1px solid #e8e9f2;
+			background-color: white;
+		}
+		h4{
+			font-size: 18px;
+    		margin-bottom: 2px;
+		}
+		strong{
+			color: #81869b;
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+	.volume{
+		span{
+			color: #a8aab7;
+    		padding-top: 7px;
+		}
+	}
+	.volume-range{
+		.fa-plus{
+			color: #3860ff;
+			background-color: #e2e5fb;
+			padding: 9px;
+		}
+		strong{
+			padding:6px;
+		}
+		strong,.fa-usd{
+			color:#3860ff;
+			font-size: 12px;
+    		padding-left: 6px;
+		}
+	}
+	.unlock-features{
+		span,.fa{
+			color: #a8aab7;
+		}
+	}
+	.credit-card img{
+		width:100%;
+	}
+	.actions{
+		h6{
+			color: #a8aab7;
+			font-size: 13px;
+			padding:6px;
+		}
+		.fa{
+			font-size: 15px;
+			padding: 6px;
+			border: 1px solid #a8aab7;
+			margin-left: 15px;
+		}
+	} 
+}
+
+
+/*media queries works here*/
+@media (min-width: 280px) and (max-width: 653px){
+	.navbar{
+		margin-top: 14px;
+		width:100%;
+		.navbar-nav{
+			background-color: white;
+			padding: 0px 30px;
+			border-radius: 8px;
+			border: 1px solid grey;
+		}
+		.navbar-toggler{
+			position: fixed;
+			top: 22px;
+			right: 10px;
+			border: 1px solid #a8aab7;
+			background-color: white;
+			.fa-bars{
+				padding-top:7px;
+				font-size: 17px;
+				color:black;
+			}
+			button:focus{
+				outline:none !important;
+				outline: 5px auto transparent;
+			}
+		}
+	}
+	.sidebar{
+		width:100%;
+		padding: 0px 20px;
+		left:auto;
+		position:absolute;
+		.logo{
+			width:75%;
+		}
+		.add-mobile{
+			background-color: #f5f7fb !important;
+		}
+	}
+	.exchange{
+		margin-left:0px;
+		margin-top:122px !important;
+		padding-bottom:20px !important;
+	}
+	.exchange-date{
+		margin-top:15px !important;
+	}
+	
+	.exchange .price-dollars{
+		margin:15px 15px 0px 15px;
+	}
+	.reset-values .dropdown{
+		padding:0px !important;
+		margin:0px !important;
+	}
+	.actions{
+		padding-bottom:20px;
+	}
+	.profile{
+		top:auto;
+		width:100%;
+		margin-top:20px !important;
+	}
+	.user{
+		margin-top:0px !important;
+		img{
+			width:50% !important;
+		}
+	}
+}
+
+@media (min-width: 546px) and (max-width: 768px){
+    .navbar{
+		margin-top: 14px;
+		width:100%;
+		.navbar-nav{
+			background-color: white;
+			padding: 0px 30px;
+			border-radius: 8px;
+		}
+		.navbar-toggler{
+			position: fixed;
+			top: 75px;
+			left: 142px;
+			border: 1px solid #a8aab7;
+			background-color: white;
+			.fa-bars{
+				padding-top:7px;
+				font-size: 17px;
+				color:black;
+			}
+			button:focus{
+				outline:none !important;
+				outline: 5px auto transparent;
+			}
+		}
+	}
+	.add-mobile{
+		padding:0px !important;
+	}
+	.exchange-screen{
+		height: 301vh;
+	}
+	.reset-values .dropdown{
+		padding:0px !important;
+		margin:0px !important;
+	}
+	.profile{
+		background-color: white;
+		top: 859px;
+		left: 222px;
+		width: 67%;
+		padding: 15px 0px !important;
+		margin-top: 15px !important;
+		border-radius: 8px;
+		.unlock-features{
+			background-color: #f5f7fb !important;
+			margin: 19px;
+			border-radius: 8px;
+		}
+		.user {
+			margin-top:0px !important;
+			img{
+				width:30%;
+			}
+		}
+		.credit-card img{
+			width: 50%;
+			margin: 0px auto;
+			display: block;
+		}
+		.actions{
+			padding:0px 20px;
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1024px){
+	.profile{
+		width:210px;
+	}
+}
+
